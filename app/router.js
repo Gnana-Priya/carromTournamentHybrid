@@ -7,6 +7,16 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('bidding', function() {
+    this.route('bidding-manager');
+    this.route('bidder');
+  });
+  this.route('admin', function() {
+    this.route('players');
+    this.route('teams');
+    this.route('matches');
+    this.route('tournaments');
+  });
 });
 
 export default Router;
